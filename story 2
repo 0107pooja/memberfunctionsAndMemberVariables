@@ -1,0 +1,37 @@
+Once upon a time, in a land of finance and technology, there was a group of programmers tasked with creating a program to manage the bank accounts of the kingdom's citizens.
+
+The team of programmers decided to create a class called BankAccount to represent each citizen's account. The class would have member variables to store information such as the account holder's name, account number, and current balance. They would also have member functions to perform actions such as depositing money, withdrawing money, and checking the balance.
+
+The programmers set to work creating the class. They wrote the following code:
+
+class BankAccount {
+    // member variables
+    String name;
+    long accountNumber;
+    double balance;
+
+    // member functions
+    void deposit(double amount) {
+        balance += amount;
+        System.out.println("Deposit of $" + amount + " successful. Current balance is $" + balance);
+    }
+    void withdraw(double amount) {
+        if (amount > balance) {
+            System.out.println("Insufficient funds.");
+        } else {
+            balance -= amount;
+            System.out.println("Withdrawal of $" + amount + " successful. Current balance is $" + balance);
+        }
+    }
+    double checkBalance() {
+        return balance;
+    }
+}
+
+
+
+The team then created new instances of the BankAccount class for each citizen and set the member variables accordingly. They also added buttons to their program that, when clicked, would call the appropriate member functions to deposit or withdraw money or check the balance.
+
+The program was finally complete and the kingdom's citizens were able to easily manage their bank accounts. The kingdom was a happy place because the team succeeded in their task and the citizens were able to manage their finances seamlessly.
+
+The moral of the story is that by using member variables and member functions, the programmers were able to create a clear and organized way to represent the bank accounts, making it easy to keep track of important information about each account and perform actions on them.
